@@ -38,8 +38,8 @@ The **Global Stocks Trading Dashboard** provides a modern interface for monitori
 ## Setup & Usage
 1. **Clone or download** this repository:
    ```bash
-   git clone https://github.com/<your-github-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/Er-SarthakBansal/global-stocks-dashboard.git
+   cd global-stocks-dashboard
    ```
 2. **Open the application**  
    Launch `index.html` in a modern browser *(supports ES6 modules)*.
