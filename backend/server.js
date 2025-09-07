@@ -11,7 +11,7 @@ app.use(cors());
 app.get('/api/quote',async (req, res) => {
   const symbol = req.query.symbol;
   if (!symbol) {
-    res.status(400).json({ error: 'Missing symbol query parameter' });
+    return res.status(400).json({ error: 'Missing symbol query parameter' });
   }
   try {
     const response = await axios.get(`https://finnhub.io/api/v1/quote`, {
@@ -20,9 +20,9 @@ app.get('/api/quote',async (req, res) => {
         token: process.env.API_KEY
       }
     });
-    res.json(response.data);
+    return res.json(response.data);
   } catch (error) {
-    res.status(400).json({ error: 'Failed to fetch stock data' });
+    return res.status(400).json({ error: 'Failed to fetch stock data' });
   }
 });
 
