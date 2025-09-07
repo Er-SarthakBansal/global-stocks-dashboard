@@ -13,8 +13,8 @@ export let foreignStocks = [
   { symbol: "NFLX", name: "Netflix Inc." }];
 
 export async function fetchQuote(symbol) {
-  const apiKey = "d2cp01hr01qihtcsrb30d2cp01hr01qihtcsrb3g";
-  let url = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`; let response = await fetch(url);
+  let url=`http://localhost:3000/api/quote?symbol=${symbol}`;
+  let response = await fetch(url);
   let data = await response.json();
   return {
     price: data.c,
