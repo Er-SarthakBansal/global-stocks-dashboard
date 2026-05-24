@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+   "type": "module",
   "description": "Backend server to securely fetch stock data for a trading dashboard. This project acts as a proxy to hide the API key from the frontend.",
   "main": "server.js",
   "scripts": {

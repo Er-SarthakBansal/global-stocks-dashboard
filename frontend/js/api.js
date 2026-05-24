@@ -13,12 +13,12 @@ export let foreignStocks = [
   { symbol: "NFLX", name: "Netflix Inc." }];
 
 export async function fetchQuote(symbol) {
-  let url = `https://global-stocks-dashboard.onrender.com/api/quote?symbol=${symbol}`;
+  let url = `http://localhost:3000/api/quote?symbol=${symbol}`;
   let response = await fetch(url);
   let data = await response.json();
   return {
-    price: data.c,
-    changePercent: ((data.c - data.pc) / data.pc) * 100
+    price: data.data.c,
+    changePercent: ((data.data.c - data.data.pc) / data.data.pc) * 100
   };
 }
 
