@@ -6,7 +6,7 @@ import Header from "./components/Header"
 import StatsCard from "./components/StatsCard"
 import SearchBar from "./components/SearchBar"
 import StocksTable from "./components/StocksTable"
-import Watchlist from "./components/Watchlist"
+import Watchlist from "./components/Watchlist.jsx"
 import Footer from "./components/Footer"
 
 import {
