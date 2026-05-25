@@ -1,72 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trading-Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-</head>
-
-<body>
-  <div class="wrapper-container">
-    <header id="header-container">
-      <h2>Global Stocks Dashboard</h2>
-      <button id="toggle-btn">🌙</button>
-    </header>
-    <main>
-      <section class="market-summary">
-        <div class="card index">Last updated:<br><br>
-          <span id="last-updated">--</span>
-        </div>
-        <div class="card gainers">Top Gainer:<br>
-          <span id="gainer">--</span>
-        </div>
-        <div class="card losers">Top Loser:<br>
-          <span id="loser">--</span>
-        </div>
-      </section>
-      <section class="search-section">
-        <input type="text" id="search-bar" placeholder="Search Stocks...">
-        <button id="search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-        <button id="toggle-sort-btn">Sort (⇅)</button>
-      </section>
-      <section class="stocks-list">
-        <table>
-          <thead>
-            <tr>
-              <th>Symbol</th>
-              <th>Name</th>
-              <th>Price</th>
-              <th>%Change</th>
-              <th>Add</th>
-            </tr>
-          </thead>
-          <tbody id="stocks-data">
-            <!-- stocks data inserted later via javascript -->
-          </tbody>
-        </table>
-      </section>
-      <div class="dashboard-bottom">
-        <section class="watchlist-section">
-          <div id="Watchlist-heading">Watchlist:</div><br>
-          <ul id="watchlist-list"></ul>
-        </section>
-        <section class="chart-area">
-          <h2>Price Chart</h2>
-          <div class="chart-container">[COMING SOON]</div>
-        </section>
-      </div>
-    </main>
-    <hr>
-    <footer id="footer">
-      <p id="footer-text">&copy; 2025 Sarthak Bansal &ndash; Global Markets Analytics Platform| All rights reserved.</p>
-    </footer>
-  </div>
-  <script type="module" src="js/script.js"></script>
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
