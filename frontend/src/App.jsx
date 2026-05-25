@@ -6,7 +6,7 @@ import Header from "./components/Header"
 import StatsCard from "./components/StatsCard"
 import SearchBar from "./components/SearchBar"
 import StocksTable from "./components/StocksTable"
-import Watchlist from "./components/Watchlist.jsx"
+import WatchList from "./components/WatchList"
 import Footer from "./components/Footer"
 
 import {
@@ -215,7 +215,7 @@ function App() {
 
         <div className="dashboard-bottom">
 
-          <Watchlist
+          <WatchList
             watchlist={watchlist}
           />
 
